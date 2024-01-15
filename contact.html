@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div>
+        <img src="bg.jpg" alt="Baner" id="bg">
+    </div>
+
+    <nav>
+        <a href="home.html">Główna</a>
+        <a href="place.html">Miejscowość</a>
+        <a href="contact.html">Kontakt</a>
+    </nav>
+    <main>
+    <div>
+        <h2>Formularz kontaktowy</h2>
+        <form action="process_contact.php" method="post">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Temat:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Treść wiadomości:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Wyślij</button>
+        </form>
+    </div>
+    </main>
+    <footer id="footer">
+        kantolak22@zs1.nowotarski.edu.pl
+    </footer>
+    <script>
+        function updateDateTime() {
+            var footer = document.getElementById('footer');
+            var currentDateTime = new Date();
+            var formattedDateTime = currentDateTime.toLocaleString('pl-PL');
+            footer.innerHTML = 'Aktualna data i godzina: ' + formattedDateTime + ' kantolak22@zs1.nowotarski.edu.pl';
+        }
+
+        updateDateTime();
+
+        setInterval(updateDateTime, 60000);
+    </script>
+</body>
+</html>
