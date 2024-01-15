@@ -12,7 +12,7 @@
     </div>
 
     <nav>
-        <a href="home.php">Główna</a>
+        <a href="index.php">Główna</a>
         <a href="place.php">Miejscowość</a>
         <a href="contact.php">Kontakt</a>
     </nav>
