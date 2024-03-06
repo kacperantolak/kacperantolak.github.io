@@ -3,34 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona Główna</title>
-    <link rel="stylesheet" href="style.css">
+    <title>malarz</title>
+    <link rel="stylesheet" href="styl_1.css">
 </head>
 <body>
-    <div>
-        <img src="bg.jpg" alt="Baner" id='bg'>
-    </div>
-
-    <nav>
-        <a href="index.html">Główna</a>
-        <a href="place.html">Miejscowość</a>
-        <a href="contact.html">Kontakt</a>
-    </nav>
-    <main><img id="filler" src="filler.jpg"></main>
-    <footer id="footer">
-        kantolak22@zs1.nowotarski.edu.pl
+    <header>
+        <h1>Malowanie pokoi i biur</h1>
+    </header>
+    <section class="container">
+        <aside>
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="mieszamy.html">Mieszamy</a></li>
+                <li><a href="cena.html">Wyceniamy</a></li>
+            </ul>
+        </aside>
+        <main>
+        </main>
+        <aside>
+            <img src="obraz.png" alt="Próbki farb">
+        </aside>
+    </section>
+    <footer>
+        <h3>MALARZ</h3>
+        <p>Stronę opracował: Kacper Antolak]</p>
     </footer>
-    <script>
-        function updateDateTime() {
-            var footer = document.getElementById('footer');
-            var currentDateTime = new Date();
-            var formattedDateTime = currentDateTime.toLocaleString('pl-PL');
-            footer.innerHTML = 'Aktualna data i godzina: ' + formattedDateTime + ' kantolak22@zs1.nowotarski.edu.pl';
-        }
-
-        updateDateTime();
-
-        setInterval(updateDateTime, 60000);
-    </script>
 </body>
 </html>
